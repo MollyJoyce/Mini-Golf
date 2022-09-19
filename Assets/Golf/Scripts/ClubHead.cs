@@ -25,4 +25,3 @@ public class ClubHead : MonoBehaviour
 	}
 }
 
-//test
