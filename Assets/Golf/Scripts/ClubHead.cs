@@ -24,3 +24,5 @@ public class ClubHead : MonoBehaviour
 		follower.SetFollowTarget(this);
 	}
 }
+
+//test
