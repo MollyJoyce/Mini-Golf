@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
+    private bool direction = true;
+    private float counter;
+    
+    
     // Update is called once per frame
     void Update()
     {
-        
+        if(direction == true)
+        {
+
+        }
     }
 }
