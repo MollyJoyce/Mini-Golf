@@ -1708,6 +1708,7 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 };
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=16
+#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D16_t4AEA0DA5FAE2023C06F0391C711166391A700B4F 
 {
 	union
@@ -1721,6 +1722,7 @@ struct __StaticArrayInitTypeSizeU3D16_t4AEA0DA5FAE2023C06F0391C711166391A700B4F
 		uint8_t __StaticArrayInitTypeSizeU3D16_t4AEA0DA5FAE2023C06F0391C711166391A700B4F__padding[16];
 	};
 };
+#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.EnhancedTouch.Touch/FingerAndTouchState
 struct FingerAndTouchState_tC0A8EFA38A7428736E11195294EA7F6E1BA8F82D 

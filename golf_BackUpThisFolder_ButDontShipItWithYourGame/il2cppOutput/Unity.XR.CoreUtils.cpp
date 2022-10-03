@@ -2214,6 +2214,7 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 };
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=16
+#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D16_tCD04885E8E9C33E48B8582901FD71B92D67D30EA 
 {
 	union
@@ -2227,6 +2228,7 @@ struct __StaticArrayInitTypeSizeU3D16_tCD04885E8E9C33E48B8582901FD71B92D67D30EA
 		uint8_t __StaticArrayInitTypeSizeU3D16_tCD04885E8E9C33E48B8582901FD71B92D67D30EA__padding[16];
 	};
 };
+#pragma pack(pop, tp)
 
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.Vector3>
 struct Enumerator_t609488A9291E792D6A59707FF2BF03FBB727E047 

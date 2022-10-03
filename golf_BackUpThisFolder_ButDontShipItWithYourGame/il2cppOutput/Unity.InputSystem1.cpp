@@ -1426,6 +1426,7 @@ struct Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682_StaticFields
 };
 
 // UnityEngineInternal.Input.NativeInputEvent
+#pragma pack(push, tp, 1)
 struct NativeInputEvent_tDE7DE9A48ACA442A8D37E2920836D00C26408CB8 
 {
 	union
@@ -1512,6 +1513,7 @@ struct NativeInputEvent_tDE7DE9A48ACA442A8D37E2920836D00C26408CB8
 		uint8_t NativeInputEvent_tDE7DE9A48ACA442A8D37E2920836D00C26408CB8__padding[20];
 	};
 };
+#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.Utilities.PrimitiveValue
 struct PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 
@@ -2191,6 +2193,7 @@ struct ActionMapIndices_t013BEFD76B7FE52E413C5DBF5C7CDA4194800CBD
 };
 
 // UnityEngine.InputSystem.InputActionState/BindingState
+#pragma pack(push, tp, 1)
 struct BindingState_t69D9579E13933436EAF3A3886EAED220DFD696EA 
 {
 	union
@@ -2384,8 +2387,10 @@ struct BindingState_t69D9579E13933436EAF3A3886EAED220DFD696EA
 		uint8_t BindingState_t69D9579E13933436EAF3A3886EAED220DFD696EA__padding[32];
 	};
 };
+#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.InputActionState/InteractionState
+#pragma pack(push, tp, 1)
 struct InteractionState_t057CEDBCC55120B30A48DAD0A4111EF8FF62D3AE 
 {
 	union
@@ -2527,8 +2532,10 @@ struct InteractionState_t057CEDBCC55120B30A48DAD0A4111EF8FF62D3AE
 		uint8_t InteractionState_t057CEDBCC55120B30A48DAD0A4111EF8FF62D3AE__padding[48];
 	};
 };
+#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.InputActionState/TriggerState
+#pragma pack(push, tp, 1)
 struct TriggerState_t99B6AEA05EECEE1FEE7B60C2ABA73FA03685F38D 
 {
 	union
@@ -2709,6 +2716,7 @@ struct TriggerState_t99B6AEA05EECEE1FEE7B60C2ABA73FA03685F38D
 		uint8_t TriggerState_t99B6AEA05EECEE1FEE7B60C2ABA73FA03685F38D__padding[48];
 	};
 };
+#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.InputActionState/UnmanagedMemory
 struct UnmanagedMemory_t862EBE5224929ED0E2F989D790EB6B8633E612A2 
@@ -3381,6 +3389,7 @@ struct InputControlAttribute_t312CA97B153666F873279E81BA4054684715368D  : public
 };
 
 // UnityEngine.InputSystem.LowLevel.InputEvent
+#pragma pack(push, tp, 1)
 struct InputEvent_t10F727342D1A79DCFC06529C203BB61C194AEBC5 
 {
 	union
@@ -3407,6 +3416,7 @@ struct InputEvent_t10F727342D1A79DCFC06529C203BB61C194AEBC5
 		uint8_t InputEvent_t10F727342D1A79DCFC06529C203BB61C194AEBC5__padding[20];
 	};
 };
+#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.InputEventBuffer
 struct InputEventBuffer_t3123D90CE491FA9828E878B2BEF766A3DC6E74FE 

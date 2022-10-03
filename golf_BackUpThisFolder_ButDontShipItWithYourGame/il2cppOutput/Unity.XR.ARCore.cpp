@@ -2634,6 +2634,7 @@ struct XROcclusionSubsystemCinfo_tC55FF1EE3C9965ECC716C629299373FF4C33D272_marsh
 };
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=28
+#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D28_tBB69880BACB65557D85195F1E3EB8C31F708DC69 
 {
 	union
@@ -2647,6 +2648,7 @@ struct __StaticArrayInitTypeSizeU3D28_tBB69880BACB65557D85195F1E3EB8C31F708DC69
 		uint8_t __StaticArrayInitTypeSizeU3D28_tBB69880BACB65557D85195F1E3EB8C31F708DC69__padding[28];
 	};
 };
+#pragma pack(pop, tp)
 
 // UnityEngine.XR.ARSubsystems.XRAnchorSubsystemDescriptor/Cinfo
 struct Cinfo_t935E3721D062C7CF3DB741A91D425DFE99290384 

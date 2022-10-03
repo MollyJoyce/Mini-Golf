@@ -1256,6 +1256,7 @@ GameObject:
   - component: {fileID: 1526297413}
   - component: {fileID: 1526297412}
   - component: {fileID: 1526297411}
+  - component: {fileID: 1526297415}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -1342,6 +1343,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1526297415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526297410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5480c3f8c75cc4128b8bd4d641b32115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  strokeText: {fileID: 0}
+  winText: {fileID: 0}
+  numberOfBalls: 1
+  ballsRemaining: 0
+  ballSpawn: 0
+  club: {fileID: 528743962}
+  ball: {fileID: 402225297}
 --- !u!1 &1653923157
 GameObject:
   m_ObjectHideFlags: 0
