@@ -417,10 +417,12 @@ struct ClubHeadFollower_t5BC9209C4183B9F6A518A0619AAD86BEDE71EE4A  : public Mono
 // Door
 struct Door_tE09A4D567B369BBAF1953985B48BCFE5B6ADE8BD  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// System.Boolean Door::direction
-	bool ___direction_4;
-	// System.Single Door::counter
-	float ___counter_5;
+	// System.Boolean Door::Direction
+	bool ___Direction_4;
+	// System.Single Door::Counter
+	float ___Counter_5;
+	// UnityEngine.Vector3 Door::Pos
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pos_6;
 };
 
 // HoldGolfClub
@@ -913,12 +915,95 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClubHeadFollower__ctor_m7896AEAA975A978A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void Door::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Door_Start_m21FDBEEE08A08BAED224B9928B91C5AB578FF330 (Door_tE09A4D567B369BBAF1953985B48BCFE5B6ADE8BD* __this, const RuntimeMethod* method) 
+{
+	{
+		// Pos.x = 13.5f;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = (&__this->___Pos_6);
+		L_0->___x_2 = (13.5f);
+		// Pos.y = .5f;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_1 = (&__this->___Pos_6);
+		L_1->___y_3 = (0.5f);
+		// Pos.z = -4f;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2 = (&__this->___Pos_6);
+		L_2->___z_4 = (-4.0f);
+		// }
+		return;
+	}
+}
 // System.Void Door::Update()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Door_Update_m3F40A4C15E86B20E0797D4CC3B43B62B86EA58BA (Door_tE09A4D567B369BBAF1953985B48BCFE5B6ADE8BD* __this, const RuntimeMethod* method) 
 {
 	{
-		// if(direction == true)
-		bool L_0 = __this->___direction_4;
+		// if(Pos.x < 11.5)
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = (&__this->___Pos_6);
+		float L_1 = L_0->___x_2;
+		if ((!(((double)((double)L_1)) < ((double)(11.5)))))
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		// Direction = true;
+		__this->___Direction_4 = (bool)1;
+		goto IL_003e;
+	}
+
+IL_0020:
+	{
+		// } else if (Pos.x > 15.5)
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2 = (&__this->___Pos_6);
+		float L_3 = L_2->___x_2;
+		if ((!(((double)((double)L_3)) > ((double)(15.5)))))
+		{
+			goto IL_003e;
+		}
+	}
+	{
+		// Direction = false;
+		__this->___Direction_4 = (bool)0;
+	}
+
+IL_003e:
+	{
+		// if(Direction == true)
+		bool L_4 = __this->___Direction_4;
+		if (!L_4)
+		{
+			goto IL_006c;
+		}
+	}
+	{
+		// Pos.x += .005f;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_5 = (&__this->___Pos_6);
+		float* L_6 = (&L_5->___x_2);
+		float* L_7 = L_6;
+		float L_8 = *((float*)L_7);
+		*((float*)L_7) = (float)((float)il2cpp_codegen_add(L_8, (0.00499999989f)));
+		// transform.position = Pos;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+		L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = __this->___Pos_6;
+		NullCheck(L_9);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_9, L_10, NULL);
+		return;
+	}
+
+IL_006c:
+	{
+		// Pos.x -= .005f;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_11 = (&__this->___Pos_6);
+		float* L_12 = (&L_11->___x_2);
+		float* L_13 = L_12;
+		float L_14 = *((float*)L_13);
+		*((float*)L_13) = (float)((float)il2cpp_codegen_subtract(L_14, (0.00499999989f)));
+		// transform.position = Pos;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
+		L_15 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = __this->___Pos_6;
+		NullCheck(L_15);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_15, L_16, NULL);
 		// }
 		return;
 	}
@@ -927,8 +1012,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Door_Update_m3F40A4C15E86B20E0797D4CC3B4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Door__ctor_m3D2DF383E9B8EE863AD8F8421F0DF83F5B35EAB1 (Door_tE09A4D567B369BBAF1953985B48BCFE5B6ADE8BD* __this, const RuntimeMethod* method) 
 {
 	{
-		// private bool direction = true;
-		__this->___direction_4 = (bool)1;
+		// public bool Direction = true;
+		__this->___Direction_4 = (bool)1;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
