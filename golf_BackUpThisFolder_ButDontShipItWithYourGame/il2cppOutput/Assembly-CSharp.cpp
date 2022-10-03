@@ -975,12 +975,12 @@ IL_003e:
 		}
 	}
 	{
-		// Pos.x += .005f;
+		// Pos.x += .05f;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_5 = (&__this->___Pos_6);
 		float* L_6 = (&L_5->___x_2);
 		float* L_7 = L_6;
 		float L_8 = *((float*)L_7);
-		*((float*)L_7) = (float)((float)il2cpp_codegen_add(L_8, (0.00499999989f)));
+		*((float*)L_7) = (float)((float)il2cpp_codegen_add(L_8, (0.0500000007f)));
 		// transform.position = Pos;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
 		L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
@@ -992,12 +992,12 @@ IL_003e:
 
 IL_006c:
 	{
-		// Pos.x -= .005f;
+		// Pos.x -= .05f;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_11 = (&__this->___Pos_6);
 		float* L_12 = (&L_11->___x_2);
 		float* L_13 = L_12;
 		float L_14 = *((float*)L_13);
-		*((float*)L_13) = (float)((float)il2cpp_codegen_subtract(L_14, (0.00499999989f)));
+		*((float*)L_13) = (float)((float)il2cpp_codegen_subtract(L_14, (0.0500000007f)));
 		// transform.position = Pos;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
 		L_15 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);

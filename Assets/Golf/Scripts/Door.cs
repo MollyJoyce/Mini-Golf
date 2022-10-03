@@ -28,11 +28,11 @@ public class Door : MonoBehaviour
         }
         if(Direction == true)
         {
-            Pos.x += .005f;
+            Pos.x += .05f;
             transform.position = Pos;
         } else
         {
-            Pos.x -= .005f;
+            Pos.x -= .05f;
             transform.position = Pos;
         }
     }
