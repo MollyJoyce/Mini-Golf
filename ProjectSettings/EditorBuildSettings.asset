@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Mini Golf.unity
+    path: Assets/BundledAssets/mollyjoyce/Sample Hole.unity
     guid: b83dd67abde1d46eba35d74b98c190ef
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 77ddd90f2c042421da4b2b2008561e42, type: 2}
